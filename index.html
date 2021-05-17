@@ -5,6 +5,7 @@
 	<link href = "https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
 	<link rel = "stylesheet" type = text/css href = "vendors/css/fluid.css">
 	<link rel = "stylesheet" type = text/css href = "resources/css/style.css">
+	<script src="https://kit.fontawesome.com/561e5ff35e.js" crossorigin="anonymous"></script>
 </head>
 <body>
 	<header>
@@ -14,8 +15,8 @@
 				<li><a href = "#">Home</a></li>
 				<li><a href = "#">Projects</a></li>
 				<li><a href = "#">Skills</a></li>
-				<li><a href = "#">Gallery</a></li>
-				<li><a href = "#">Contact Me</a></li>
+				<li><a href = "#">About Me</a></li>
+				<li><a href = "#">Contact</a></li>
 			</ul>
 			<div class = "imp-links">
 				<a href = "https://github.com/NegiBaba"><img src = "resources/img/github.png" alt = "github logo"></a>
@@ -23,16 +24,173 @@
 			</div>
 		</nav>
 		<div class = "header-box">
-			<div class = "header-text-box">
-				<h1>Piyush Negi.</h1>
-				<p>
-					Hello, My name is Piyush. I am a Computer Science</p>
+			<div class = "row">
+				<div class = "col span_2_of_3 header-text-box">
+					<h1>Piyush Negi.</h1>
+					<p>Hello, My name is Piyush. I am a Computer Science</p>
 					<p>and Engineering student in <a href = "https://www.lpu.in/">LPU</a>.</p>
-				</p>
-				<div class = "header-img">
-					<img src = "#" alt = "Piyush's photo">
 				</div>
+				<div class = "col span_1_of_4 header-img">
+					<img src = "resources/img/profile.jpg" alt = "Piyush's photo">
+				</div>
+			</div>
 		</div>
 	</header>
+	<section class = "about-box">
+		<div class = "row">
+			<div class = "col span_1_of_2 about-box">
+				<h2 class = "about-heading">About Me</h2>
+				<p class = "about-para">I am a very competetive person, who excells in programming languages such as C/C++, Java, python etc.</p>
+				<p class = "about-para">I am also very good at Time management, Team management and able to adapt to any environment.</p>
+				<a href="resources/files/resume.pdf" class="btn btn-ghost">Resume</a>
+			</div>
+			<div class = "col span_1_of_2 about-box">
+				<img src = "resources/img/photo.jpg" alt = "Piyush's another photo" class = "person-image">
+			</div>
+		</div>
+	</section>
+	<section class = "projects">
+		<div class = "row">
+			<h1 class = "section-heading">My Projects</h1>
+			<h3 class = "section-sub-heading">Here are some of my projects.</h3>
+		</div>
+		<ul class = "project-portfolio clearfix">
+			<li>
+				<figure class = "project-image">
+					<a href = "https://github.com/NegiBaba/Animated_Algos.git">
+						<img src = "resources/img/sorting.png" alt = "merge sort image">
+					</a>
+					<p class = "project-para">Animated Sorting and Pathfinding</p>
+				</figure>
+			</li>
+			<li>
+				<figure class = "project-image">
+					<a  href = "https://github.com/NegiBaba/Snake_pygame.git">
+						<img src = "resources/img/snake.png" alt = "snake game image">
+					</a>
+					<p class = "project-para">Snake Game</p>
+				</figure>
+			</li>
+			<li>
+				<figure class = "project-image">
+					<a href = "https://github.com/NegiBaba/Automobile_price_prediction.git">
+						<img src = "resources/img/library.jpg" alt = "Library image">
+					</a>
+					<p class = "project-para">Library Management System</p>
+				</figure>
+			</li>
+			<li>
+				<figure class = "project-image">
+					<a href = "https://github.com/NegiBaba/Automobile_price_prediction.git">
+						<img src = "resources/img/automobile.png" alt = "Kaggle image">
+					</a>
+					<p class = "project-para">Automobile price prediction</p>
+				</figure>
+			</li>
+		</ul>
+	</section>
+	<section class = "skill-section">
+		<div class = "row">
+			<h1 class = "section-heading">My Skills</h1>
+			<h3 class = "section-sub-heading">Below are the lists of my skills.</h3>
+			<div class = "col span_1_of_4 service-box">
+				<i class="fas fa-laptop-code big-icon"></i>
+				<h1 class = "tech-heading">Technical Skills</h1>
+				<ul class = "tech-skills">
+					<li>C/C++</li>
+					<li>Java</li>
+					<li>Python</li>
+					<li>SQL</li>
+					<li>Front-end</li>
+				</ul>
+			</div>
+			<div class = "col span_1_of_4 service-box">
+				<i class="fab fa-git-alt big-icon"></i>
+				<h1 class = "tech-heading">Lorem Ipsum</h1>
+				<ul class = "tech-skills">
+					<li>DSA</li>
+					<li>Git/Github</li>
+					<li>Arduino</li>
+					<li>Linux</li>
+					<li>Machine Learning</li>
+				</ul>
+			</div>
+			<div class = "col span_1_of_4 service-box">
+				<i class="fas fa-user-tie big-icon"></i>
+				<h1 class = "tech-heading">Soft Skills</h1>
+				<ul class = "tech-skills">
+					<li>Communication Skill</li>
+					<li>Leadership</li>
+					<li>Time Management</li>
+					<li>Public Speaking</li>
+					<li>Quick Learner</li>
+				</ul>
+			</div>
+			<div class = "col span_1_of_4 service-box">
+				<i class="fas fa-language big-icon"></i>
+				<h1 class = "tech-heading">Languages</h1>
+				<ul class = "tech-skills lang-list">
+					<li>English</li>
+					<li>Japanese</li>
+					<li>Punjabi</li>
+					<li>Hindi</li>
+					<li>Pahari</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section class = "contact-section">
+		<div class = "row">
+			<h2 class = "contact-heading">Contact Me</h2>
+		</div>
+		<div class = "row">
+			<form method = "post" action="#" class = "contact-form">
+				<div class = "row">
+					<div class = "col span_1_of_3">
+						<label for = "name">Name</label>
+					</div>
+					<div class = "col span_2_of_3">
+						<input type = "text" name = "name" id = "name" placeholder = "Your name" required>
+					</div>
+				</div>
+				<div class = "row">
+					<div class = "col span_1_of_3">
+						<label for = "email">E-Mail</label>
+					</div>
+					<div class = "col span_2_of_3">
+						<input type = "email" name = "email" id = "email" placeholder = "Your email" required>
+					</div>
+				</div>
+				<div class = "row">
+					<div class = "col span_1_of_3">
+						<label for = "message">Drop a message</label>
+					</div>
+					<div class = "col span_2_of_3">
+						<textarea name = "message" id = "message" placeholder = "Your message"></textarea>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col span_1_of_3">
+						&nbsp;
+					</div>
+					<div class="col span_2_of_3">
+						<input type="submit" value="Send it!">
+					</div>
+				</div>
+			</form>
+		</div>
+	</section>
+	<footer>
+		<div class = "row">
+			<p>
+				This website is just an example for my skills, it does not include all the skills, 
+				projects, certificates and hobbies. 
+			</p>
+			<p>
+				For the full info please download my resume by clicking on the button inside the "about me" section. 
+			</p>
+			<p>Thank You.</p>
+		</div>
+	</footer>
 </body>
 </html>

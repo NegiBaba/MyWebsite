@@ -4,10 +4,14 @@
 	box-sizing: border-box;
 }
 
+*:focus {
+	outline: none;
+}
+
 html,
 body {
-	background-color: #fff;
-	color: #ffffff;
+	background-color: #331F3B;
+	color: #000;
 	text-rendering: optimizeLegibility;
 	font-size: 16px;
 	font-family: 'Quicksand', 'Arial', sans-serif;
@@ -18,8 +22,21 @@ body {
 	margin: 0 auto;
 }
 
+/*** CLEARFIX CLASS CSS HERE ***/
+.clearfix {
+	zoom: 1;
+}
+
+ .clearfix:after {
+ 	content: "";
+ 	display: table;
+ 	clear: both;
+ 	visibility: hidden;
+}
+
+/*** HEADER SECTION CSS HERE ***/
 header {
-	background-image: url(img/background.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .2)), url(img/background.jpg);
 	height: 100vh;
 	background-size: cover;
 	background-position: center;
@@ -27,17 +44,27 @@ header {
 }
 
 .header-box {
+	color: #fff;
 	position: absolute;
+	width: 80%;
 	top: 50%;
 	left: 30%;
 	transform: translate(-25%, -50%);
-	text-align: left;
 }
 
+.header-img img {
+	width: 75%;
+	border-radius: 50%;
+}
+
+.header-text-box {
+	padding-top: 40px;
+	padding-left: 150px;
+}
 
 h1 {
 	font-size: 250%;
-	color: #e7a036;
+	color: #69ffe9;
 	font-weight: 500;
 	margin-bottom: 20px;
 }
@@ -49,9 +76,10 @@ p {
 
 a {
 	text-decoration: none;
-	color: #69ffe9;
+	color: #39a8e9;
 }
 
+/*** NAVIGATION BAR CSS HERE ***/
 .main-nav {
 	margin-top: 20px; 
 }
@@ -69,9 +97,8 @@ nav ul {
 	position: absolute;
 	list-style: none;
 	float: left;
-	margin-right: 20px;
 	left: 50%;
-	transform: translate(-49%, -0%);
+	transform: translate(-45%, -0%);
 }
 
 nav ul li {
@@ -89,14 +116,232 @@ nav ul li a {
 nav ul li a:hover {
 	border-bottom: 2px solid #69ffe9;
 }
+
 .imp-links {
 	display: inline-block;
 	float: right;
 	margin-right: 20px;
 	margin-top: 10px;
 }
+
 .imp-links img {
 	margin-right: 5px;
 	height: 25px;
 	width: auto;
+}
+
+/*** ABOUT SECTION CSS HERE ***/
+
+.person-image {
+	width: 70%;
+}
+
+.about-heading {
+	color: #e7a036;
+	font-size: 250%;
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+
+.about-para {
+	color: #fff;
+	margin-bottom: 20px;
+	font-size: 100%;
+	line-height: 150%;
+}
+
+.about-box {
+	margin-top: 100px;
+	padding-bottom: 20px;
+}
+
+.about-box:first-child {
+	text-align: left;
+}
+
+.about-box:last-child {
+	text-align: right;
+}
+
+.btn {
+	text-decoration:none;
+	padding:10px 30px;
+	border-radius:200px;
+	display:inline-block;
+}
+
+.btn-ghost {
+	border:2px solid #39a8e9;
+	color:#39a8e9;
+	transition: background-color .5s, color .3s;
+}
+
+.btn-ghost:hover {
+	background-color:#39a8e9;
+	color:#fff;
+}
+
+/*** PROJECTS CSS HERE ***/
+.section-heading {
+	font-size: 250%;
+	color: #e7a036;
+	margin-bottom: 20px;
+	margin-top: 150px;
+}
+
+.section-sub-heading {
+	font-size: 150%;
+	color: #ffffff;
+	font-weight: 400;
+	margin-bottom: 30px;
+}
+
+.section-sub-heading:after {
+	display: block;
+	height: 2px;
+	width: 100px;
+	background-color: #69ffe9;
+	content: "";
+	margin: 30px auto 0 auto;
+}
+
+.projects {
+	text-align: center;
+	background-color: #793E60;
+}
+
+.project-portfolio {
+	margin-top: 10px;
+	list-style: none;
+	width: 100%;
+}
+
+.project-portfolio li {
+	display: block;
+	width: 25%;
+	float: left;
+}
+
+.project-image {
+	background-color: #000;
+	overflow: hidden;
+}
+
+.project-image img {
+	width: 100%;
+	height: auto;
+	opacity: .7;
+	transform: scale(1.25);
+	transition: transform .5s, opacity .5s; 
+}
+
+.project-image img:hover {
+	transform: scale(1);
+	opacity: 1;
+}
+
+.project-para {
+	color: #ffffff;
+	font-size: 90%;
+	transform: translate(0, 25%);
+}
+
+/** SKILLS SECTION CSS HERE ***/
+.skill-section {
+	text-align: center;
+	//background: linear-gradient(270deg, #afe1ae 0%, #e0aee1 100%)
+	background-color: #331f3b;
+}
+
+.big-icon {
+	font-size: 300%;
+	color: #e0aee1;
+	display: block;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.tech-heading {
+	color: #f58119;
+	font-size: 150%;
+	margin-bottom: 30px;
+	font-weight: 400;
+}
+
+.tech-skills {
+	list-style: none;
+	box-sizing: border-box;
+}
+
+.tech-skills li {
+	margin-bottom: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 120%;
+	color: #8ef1b9;
+  	border-left: 1px solid #c2674f;
+}
+
+.lang-list li {
+  	border-right: 1px solid #c2674f;
+}
+.service-box {
+	margin: 0;
+}
+
+/*** CONTACT FORM CSS HERE ***/
+.contact-section {
+	text-align: center;
+}
+
+.contact-heading {
+	color: #f58119;
+	margin-top: 150px;
+	margin-bottom: 30px;
+}
+
+.contact-form {
+	text-align: left;
+	width: 60%;
+	margin: 0 auto;
+	color: #fff;
+}
+
+input[type = submit] {
+	text-decoration: none;
+	padding: 10px 30px;
+	border: none;
+	border-radius: 200px;
+	display: inline-block;
+	background-color: #c2674f;
+	color: #fff;
+}
+
+input[type = submit]:hover {
+	background-color: #9f4d37;
+}
+
+input[type = text],
+input[type = email],
+textarea {
+	width: 100%;
+	padding: 9px;
+	border-radius: 5px;
+	border: 2px solid #644035;
+	background-color: #decde5;
+}
+
+textarea {
+	height: 100px;
+}
+
+/*** FOOTER CSS HERE***/
+footer {
+	background-color: #555;
+	padding-top: 30px;
+	padding-bottom: 10px;
+	font-size: 80%;
+	color: #888;
+	margin-top: 30px;
+	text-align: center;
 }
