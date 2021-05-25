@@ -2,21 +2,24 @@
 <html>
 <head>
 	<title>Piyush's Website</title>
+	<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+	<script src="https://kit.fontawesome.com/561e5ff35e.js" crossorigin="anonymous"></script>
+
 	<link href = "https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
 	<link rel = "stylesheet" type = text/css href = "vendors/css/fluid.css">
 	<link rel = "stylesheet" type = text/css href = "resources/css/style.css">
-	<script src="https://kit.fontawesome.com/561e5ff35e.js" crossorigin="anonymous"></script>
+	<link rel = "stylesheet" type = text/css href = "resources/css/media-query.css">
 </head>
 <body>
-	<header>
+	<header id = "homie">
 		<nav>
 			<h1>Portfolio</h1>
 			<ul class = "main-nav">
-				<li><a href = "#">Home</a></li>
-				<li><a href = "#">Projects</a></li>
-				<li><a href = "#">Skills</a></li>
-				<li><a href = "#">About Me</a></li>
-				<li><a href = "#">Contact</a></li>
+				<li><a href = "#homie">Home</a></li>
+				<li><a href = "#projs">Projects</a></li>
+				<li><a href = "#skill">Skills</a></li>
+				<li><a href = "#about">About Me</a></li>
+				<li><a href = "#contact">Contact</a></li>
 			</ul>
 			<div class = "imp-links">
 				<a href = "https://github.com/NegiBaba"><img src = "resources/img/github.png" alt = "github logo"></a>
@@ -36,7 +39,7 @@
 			</div>
 		</div>
 	</header>
-	<section class = "about-box">
+	<section class = "about-section" id = "about">
 		<div class = "row">
 			<div class = "col span_1_of_2 about-box">
 				<h2 class = "about-heading">About Me</h2>
@@ -45,11 +48,11 @@
 				<a href="resources/files/resume.pdf" class="btn btn-ghost">Resume</a>
 			</div>
 			<div class = "col span_1_of_2 about-box">
-				<img src = "resources/img/photo.jpg" alt = "Piyush's another photo" class = "person-image">
+				<img src = "resources/img/photu.jpg" alt = "Piyush's another photo" class = "person-image">
 			</div>
 		</div>
 	</section>
-	<section class = "projects">
+	<section class = "projects" id = "projs">
 		<div class = "row">
 			<h1 class = "section-heading">My Projects</h1>
 			<h3 class = "section-sub-heading">Here are some of my projects.</h3>
@@ -89,7 +92,7 @@
 			</li>
 		</ul>
 	</section>
-	<section class = "skill-section">
+	<section class = "skill-section" id = "skill">
 		<div class = "row">
 			<h1 class = "section-heading">My Skills</h1>
 			<h3 class = "section-sub-heading">Below are the lists of my skills.</h3>
@@ -139,7 +142,7 @@
 			</div>
 		</div>
 	</section>
-	<section class = "contact-section">
+	<section class = "contact-section" id = "contact">
 		<div class = "row">
 			<h2 class = "contact-heading">Contact Me</h2>
 		</div>
@@ -192,5 +195,9 @@
 			<p>Thank You.</p>
 		</div>
 	</footer>
+
+	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+	<script src = "resources/js/script.js"></script>
 </body>
 </html>
