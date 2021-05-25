@@ -1,3 +1,4 @@
+//Adding sticky navigation
 $(document).ready(function() {
 	$(".about-section").waypoint(function(direction) {
 		if(direction == "down") {
