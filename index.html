@@ -39,7 +39,7 @@
 			</div>
 		</div>
 	</header>
-	<section class = "about-section" id = "about">
+	<section class = "about-section js--about-section" id = "about">
 		<div class = "row">
 			<div class = "col span_1_of_2 about-box">
 				<h2 class = "about-heading">About Me</h2>
@@ -98,7 +98,7 @@
 			<h3 class = "section-sub-heading">Below are the lists of my skills.</h3>
 			<div class = "col span_1_of_4 service-box">
 				<i class="fas fa-laptop-code big-icon"></i>
-				<h1 class = "tech-heading">Technical Skills</h1>
+				<h1 class = "tech-heading">Domain Skills</h1>
 				<ul class = "tech-skills">
 					<li>C/C++</li>
 					<li>Java</li>
@@ -109,7 +109,7 @@
 			</div>
 			<div class = "col span_1_of_4 service-box">
 				<i class="fab fa-git-alt big-icon"></i>
-				<h1 class = "tech-heading">Lorem Ipsum</h1>
+				<h1 class = "tech-heading">Technical skills</h1>
 				<ul class = "tech-skills">
 					<li>DSA</li>
 					<li>Git/Github</li>
@@ -195,9 +195,20 @@
 			<p>Thank You.</p>
 		</div>
 	</footer>
+	<div class = "loader-section">
+		<span class="loader">
+			<span class="loader-inner">
+			</span>
+		</span>
+	</div>
 
 	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 	<script src = "resources/js/script.js"></script>
+	<script>
+		$(window).on("load", function() {
+			$(".loader-section").fadeOut("slow")
+		});
+	</script>
 </body>
 </html>

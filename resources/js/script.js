@@ -1,6 +1,6 @@
 //Adding sticky navigation
 $(document).ready(function() {
-	$(".about-section").waypoint(function(direction) {
+	$(".js--about-section").waypoint(function(direction) {
 		if(direction == "down") {
 			$("nav").addClass("sticky-nav");
 		} else {
